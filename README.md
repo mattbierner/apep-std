@@ -19,7 +19,7 @@ const p = pep_vars.store('var', pep_trans.upper(...));
 Or to extend an Apep include with new APIs:
 
 ```js
-pep = require('apep-std')(require('apep'));
+const pep = require('apep-std')(require('apep'));
 
 const p = pep.store('var', pep.upper(...));
 ```
