@@ -1,7 +1,7 @@
 {
     "name": "apep-std",
-    "version": "0.0.0",
-    "description": "Standard library generators and combinators for Apep.",
+    "version": "1.0.0",
+    "description": "Common generators and combinators for Apep.",
     "author": "Matt Bierner",
     "license": "MIT",
     "repository": {
@@ -17,14 +17,11 @@
     "main": "index.js",
    
     "dependencies": {
-        "apep": ">=1.1.0"    
+        "apep": ">=1.2.0",
+        "apep-std-transformations": "^0.0.0",
+        "apep-std-vars": "^0.0.0"
     },
     "devDependencies": {
-        "babel-preset-es2015": "^6.1.0",
-        "gulp": "^3.9.0",
-        "gulp-babel": "^6.1.0",
-        "gulp-plumber": "^1.0.0",
-        "gulp-sourcemaps": "^1.6.0",
         "mocha": "^2.3.0"
     },
     
