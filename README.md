@@ -6,14 +6,14 @@ Common generators and combinators for the [Apep Javascript text generation libra
 $ npm install apep-std
 ```
 
-You can `apep-std` in either as a collection of libraries:
+You can `apep-std` as a collection of libraries:
 
 ```js
 const pep = require('apep');
 const pep_vars = require('apep-std').vars;
 const pep_trans = require('apep-std').transformations;
 
-const p = pep_var.store('var', pep_trans.upper(...));
+const p = pep_vars.store('var', pep_trans.upper(...));
 ```
 
 Or to extend an Apep include with new APIs:
@@ -28,7 +28,7 @@ const p = pep.store('var', pep.upper(...));
 Apep-std is just a collection of sub libraries, each of which exposes one or more APIs. See each sub library for documentation.
 
 * `transformations` - [Apep-std-transformations](https://github.com/mattbierner/apep-std-transformations) - Transforming text (capitalization, replacement, matching, ...).
-* `vars` - [Apep-std-vars](https://github.com/mattbierner/apep-std-vars) - Working with variable (caching values).
+* `vars` - [Apep-std-vars](https://github.com/mattbierner/apep-std-vars) - Working with variables (caching values).
 
 
 [apep]: https://github.com/mattbierner/apep
