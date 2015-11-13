@@ -1,6 +1,6 @@
 {
     "name": "apep-std",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Common generators and combinators for Apep.",
     "author": "Matt Bierner",
     "license": "MIT",
@@ -18,8 +18,9 @@
    
     "dependencies": {
         "apep": ">=1.2.0",
-        "apep-std-transformations": "^0.0.0",
-        "apep-std-vars": "^0.0.0"
+        "apep-std-sep": "~0.0.2",
+        "apep-std-transformations": "0.1.x",
+        "apep-std-vars": "0.1.x"
     },
     "devDependencies": {
         "mocha": "^2.3.0"

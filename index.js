@@ -1,11 +1,10 @@
 "use strict";
-const pep_trans = require('apep-std-transformations');
-const pep_vars = require('apep-std-vars');
 
 module.exports = (ext) =>
-    [pep_trans, pep_vars]
-        .reduce((p, c) => c(p), Object.create(ext || {}));
+    Object.keys(module.exports)
+        .reduce((p, c) => module.exports[c](p), Object.create(ext || {}));
 
 
-module.exports.transformations = pep_trans;
-module.exports.vars = pep_vars;
+module.exports.sep = require('apep-std-sep');
+module.exports.transformations = require('apep-std-transformations');
+module.exports.vars = require('apep-std-vars');
